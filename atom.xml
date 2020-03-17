@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-17T00:48:50.897Z</updated>
+  <updated>2020-03-17T14:14:18.938Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gitbook</title>
+    <link href="http://yoursite.com/2020/03/17/gitbook/"/>
+    <id>http://yoursite.com/2020/03/17/gitbook/</id>
+    <published>2020-03-17T14:14:36.646Z</published>
+    <updated>2020-03-17T14:14:18.938Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-搜索图片来源"><a href="#1-搜索图片来源" class="headerlink" title="1.搜索图片来源"></a>1.搜索图片来源</h2><blockquote><p>命令：搜索图片</p></blockquote><h5 id="此功能限制使用频率，冷却时间为60秒"><a href="#此功能限制使用频率，冷却时间为60秒" class="headerlink" title="此功能限制使用频率，冷却时间为60秒"></a>此功能限制使用频率，冷却时间为60秒</h5><h3 id="图片要求："><a href="#图片要求：" class="headerlink" title="图片要求："></a>图片要求：</h3><ul><li>图片必须为刚好完整的二次元插画</li><li>被涂抹的部分不能过大</li><li>截屏留有的黑边等请自行剪裁后搜索，不要留有与图片无关的部分</li><li>图片大小不能过大，清晰度不会影响结果，在手机上请不要勾选“发送原图”这样只会增加搜图时间，甚至导致搜索失败</li></ul><p>SauceNAO网页版 <a href="https://saucenao.com/" target="_blank" rel="noopener">https://saucenao.com/</a></p><p>截图：<br><img src="https://s2.ax1x.com/2020/01/08/lgq4l6.jpg" alt="聊天截图" title="poi？"  /></p><h2 id="2-这个功能还可以用来搜本子"><a href="#2-这个功能还可以用来搜本子" class="headerlink" title="2.这个功能还可以用来搜本子"></a>2.这个功能还可以用来搜本子</h2><p>注：只能搜索<strong>完整的一页</strong>，搜出来的结果是英文<br>如果结果中没有来源链接可以去baidu搜索名称╮(╯﹏╰）╭</p><p>截图：<br><img src="https://s2.ax1x.com/2020/01/08/l2iLqA.jpg" alt="聊天截图" title="poi？"></p><h2 id="3-甚至用来搜番"><a href="#3-甚至用来搜番" class="headerlink" title="3.甚至用来搜番"></a>3.甚至用来搜番</h2><p>搜索一张完整的截图就可以，只不过结果为英文，然后去baidu搜索名称</p><p>再次说明：必须是一张完整的截图<br>例如这张不玩游戏就会死的截图：<br><img src="https://s2.ax1x.com/2020/01/08/l2Z2rD.jpg" alt="聊天截图" title="poi？"></p><h2 id="（附加）使用a2d进行搜索"><a href="#（附加）使用a2d进行搜索" class="headerlink" title="（附加）使用a2d进行搜索"></a>（附加）使用a2d进行搜索</h2><blockquote><p>命令：a2d搜索</p></blockquote><h5 id="此功能限制使用频率，冷却时间为60秒-1"><a href="#此功能限制使用频率，冷却时间为60秒-1" class="headerlink" title="此功能限制使用频率，冷却时间为60秒"></a>此功能限制使用频率，冷却时间为60秒</h5><p>这个命令与搜索图片大致相同，使用a2d（就叫这个名字）进行搜索，据说可以搜索不完整的图片，不过我试了几次搜索图片搜不出来的a2d也无能为力，而且a2d搜出来的结果大多是推特的来源链接，即使p站上有图片也是这样，所以这个a2d搜索建议作为搜索图片的备用命令，还是<strong>建议首选使用搜索图片进行搜索</strong></p><p>使用方法与搜索图片是一模一样的</p><p>a2d搜图网页版 <a href="https://ascii2d.net/" target="_blank" rel="noopener">https://ascii2d.net/</a></p><h2 id="搜索特殊示例（极端情况）"><a href="#搜索特殊示例（极端情况）" class="headerlink" title="搜索特殊示例（极端情况）"></a>搜索特殊示例（极端情况）</h2><h6 id="1-全屏马赛克"><a href="#1-全屏马赛克" class="headerlink" title="1.全屏马赛克"></a>1.全屏马赛克</h6><p>最重要的是图片完整，没有雨图片无关的部分，图片像素影响不大</p><h4 id=""><a href="#" class="headerlink" title=""></a><img src="https://s2.ax1x.com/2020/02/19/3VYehT.jpg" alt=""></h4><p><img src="https://s2.ax1x.com/2020/02/19/3VYdjH.jpg" alt=""></p><h6 id="2-拍屏幕"><a href="#2-拍屏幕" class="headerlink" title="2.拍屏幕"></a>2.拍屏幕</h6><p>保持图片完整，这个非常重要</p><p><img src="https://s2.ax1x.com/2020/02/19/3VYu3F.jpg" alt=""></p><p><img src="https://s2.ax1x.com/2020/02/19/3VYn9U.jpg" alt=""></p><p>最最重要的是确保图片完整，没有与图片无关的部分！</p><h6 id="最最重要的是确保图片完整，没有与图片无关的部分！"><a href="#最最重要的是确保图片完整，没有与图片无关的部分！" class="headerlink" title="最最重要的是确保图片完整，没有与图片无关的部分！"></a>最最重要的是确保图片完整，没有与图片无关的部分！</h6><h4 id="最最重要的是确保图片完整，没有与图片无关的部分！-1"><a href="#最最重要的是确保图片完整，没有与图片无关的部分！-1" class="headerlink" title="最最重要的是确保图片完整，没有与图片无关的部分！"></a>最最重要的是确保图片完整，没有与图片无关的部分！</h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-搜索图片来源&quot;&gt;&lt;a href=&quot;#1-搜索图片来源&quot; class=&quot;headerlink&quot; title=&quot;1.搜索图片来源&quot;&gt;&lt;/a&gt;1.搜索图片来源&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;命令：搜索图片&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
