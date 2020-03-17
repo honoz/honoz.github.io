@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Honoz的个人博客</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-03-17T00:48:50.897Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Honoz</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/03/17/hello-world/"/>
+    <id>http://yoursite.com/2020/03/17/hello-world/</id>
+    <published>2020-03-17T03:23:52.290Z</published>
+    <updated>2020-03-17T00:48:50.897Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>nas服务器搭建（迅雷远程下载）</title>
+    <link href="http://yoursite.com/2018/11/19/nas%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/"/>
+    <id>http://yoursite.com/2018/11/19/nas%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</id>
+    <published>2018-11-18T16:00:00.000Z</published>
+    <updated>2018-11-19T09:29:23.309Z</updated>
+    
+    <content type="html"><![CDATA[<p>主要功能：</p><p>1、迅雷远程下载，可以通过手机端电脑端远程下载文件，实现免费的离线下载。</p><p>2、文件共享，通过SAMBA 实现电脑，手机，服务器上文件共享功能。</p><h2 id="迅雷远程服务搭建"><a href="#迅雷远程服务搭建" class="headerlink" title="迅雷远程服务搭建"></a>迅雷远程服务搭建</h2><h3 id="挂载磁盘"><a href="#挂载磁盘" class="headerlink" title="挂载磁盘"></a>挂载磁盘</h3><p>安装所需软件包</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install fuse-utils ntfs-3g</span><br></pre></td></tr></table></figure><p>这里我们要设置成开机自动挂载</p><p>完成此设置后，可以在插入USB设备时，自动将设备挂载到一个本地目录下。</p><h3 id="配置自动挂载"><a href="#配置自动挂载" class="headerlink" title="配置自动挂载"></a>配置自动挂载</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo nano /etc/udev/rules.d/10-usbstorage.rules</span><br></pre></td></tr></table></figure><p>将下面一段话复制粘贴保存退出</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">$ KERNEL!=<span class="string">"sd*"</span>,GOTO=<span class="string">"media_by_label_auto_mount_end"</span></span><br><span class="line"></span><br><span class="line">SUBSYSTEM!=<span class="string">"block"</span>,GOTO=<span class="string">"media_by_label_auto_mount_end"</span></span><br><span class="line"></span><br><span class="line">IMPORT&#123;program&#125;=<span class="string">"/sbin/blkid -o udev -p %N"</span></span><br><span class="line"></span><br><span class="line">ENV&#123;ID_FS_TYPE&#125;==<span class="string">""</span>, GOTO=<span class="string">"media_by_label_auto_mount_end"</span></span><br><span class="line"></span><br><span class="line">ENV&#123;ID_FS_LABEL&#125;!=<span class="string">""</span>, ENV&#123;dir_name&#125;=<span class="string">"%E&#123;ID_FS_LABEL&#125;"</span></span><br><span class="line"></span><br><span class="line">ENV&#123;ID_FS_LABEL&#125;==<span class="string">""</span>,ENV&#123;dir_name&#125;=<span class="string">"Untitled-%k"</span></span><br><span class="line"></span><br><span class="line">ACTION==<span class="string">"add"</span>,ENV&#123;mount_options&#125;=<span class="string">"relatime,sync"</span></span><br><span class="line"></span><br><span class="line">ACTION==<span class="string">"add"</span>, ENV&#123;ID_FS_TYPE&#125;==<span class="string">"vfat"</span>,ENV&#123;mount_options&#125;=<span class="string">"iocharset=utf8,umask=000"</span></span><br><span class="line"></span><br><span class="line">ACTION==<span class="string">"add"</span>, ENV&#123;ID_FS_TYPE&#125;==<span class="string">"ntfs"</span>,ENV&#123;mount_options&#125;=<span class="string">"iocharset=utf8,umask=000"</span></span><br><span class="line"></span><br><span class="line">ACTION==<span class="string">"add"</span>, RUN+=<span class="string">"/bin/mkdir -p/media/%E&#123;dir_name&#125;"</span>, RUN+=<span class="string">"/bin/mount -o <span class="variable">$env</span>&#123;mount_options&#125; /dev/%k/media/%E&#123;dir_name&#125;"</span></span><br><span class="line"></span><br><span class="line">ACTION==<span class="string">"remove"</span>, ENV&#123;dir_name&#125;!=<span class="string">""</span>,RUN+=<span class="string">"/bin/umount -l /media/%E&#123;dir_name&#125;"</span>, RUN+=<span class="string">"/bin/rmdir/media/%E&#123;dir_name&#125;"</span></span><br><span class="line"></span><br><span class="line">LABEL=<span class="string">"media_by_label_auto_mount_end"</span></span><br></pre></td></tr></table></figure><p>再次插入usb存储设备，它会自动挂载到/media目录下，并且支持utf8格式的中文文件名。</p><p>例如，我的U盘名称为TB，插入后可以在/media/TB访问我的U盘文件。</p><h3 id="安装迅雷程序"><a href="#安装迅雷程序" class="headerlink" title="安装迅雷程序"></a>安装迅雷程序</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ wget http://www.openwrtdl.com/wordpress/wp-content/uploads/2016/03/Xware1.0.31_armel_v5te_glibc.zip</span><br></pre></td></tr></table></figure><p>ls   查看压缩文件</p><p>unzip加上压缩文件名</p><p>现在要做的就是在网上注册一个迅雷远程账号：<a href="http://yuancheng.xunlei.com/" target="_blank" rel="noopener">http://yuancheng.xunlei.com/</a></p><p>输入</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./portal</span><br></pre></td></tr></table></figure><p>启动迅雷，将THE ACTIVE CODE IS:后面的字母或数字复制</p><p>粘贴到迅雷激活码处</p><h3 id="配置迅雷开机自启"><a href="#配置迅雷开机自启" class="headerlink" title="配置迅雷开机自启"></a>配置迅雷开机自启</h3><p>配置自启动文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nano /etc/rc.local</span><br></pre></td></tr></table></figure><p>在exit0之前添加以下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo /root/portal</span><br></pre></td></tr></table></figure><p>保存退出。这样迅雷远程下载就实现功能了</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;主要功能：&lt;/p&gt;
+&lt;p&gt;1、迅雷远程下载，可以通过手机端电脑端远程下载文件，实现免费的离线下载。&lt;/p&gt;
+&lt;p&gt;2、文件共享，通过SAMBA 实现电脑，手机，服务器上文件共享功能。&lt;/p&gt;
+&lt;h2 id=&quot;迅雷远程服务搭建&quot;&gt;&lt;a href=&quot;#迅雷远程服务搭建&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://yoursite.com/categories/%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="程序员" scheme="http://yoursite.com/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
+    
+  </entry>
+  
+</feed>
