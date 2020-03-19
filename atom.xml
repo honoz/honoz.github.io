@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-17T00:48:50.897Z</updated>
+  <updated>2020-03-19T03:54:49.797Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Arduino for esp8266安装方法</title>
+    <link href="http://yoursite.com/2020/11/19/Arduino-for-esp8266%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2020/11/19/Arduino-for-esp8266%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</id>
+    <published>2020-11-18T16:00:00.000Z</published>
+    <updated>2020-03-19T03:54:49.797Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、解压“Arduino 1.6.5安装包” <img src="https://honoz.github.io/images/photo/1.png" alt="Arduino 1.6.5安装包" title="Arduino 1.6.5安装包"> 点击安装包内 <img src="https://honoz.github.io/images/photo/2.png" alt="Arduino 1.6.5" title="Arduino 1.6.5"> 图标进行安装Arduino 1.6.5。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1、解压“Arduino 1.6.5安装包” &lt;img src=&quot;https://honoz.github.io/images/photo/1.png&quot; alt=&quot;Arduino 1.6.5安装包&quot; title=&quot;Arduino 1.6.5安装包&quot;&gt; 点击安装包内 &lt;img
+      
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://yoursite.com/categories/%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="ESP8266" scheme="http://yoursite.com/tags/ESP8266/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
