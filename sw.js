@@ -24,7 +24,7 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
-  precacheUrls.push('/2020/03/17/hello-world/');
+  precacheUrls.push('/2018/10/12/hello-world/');
 
   precacheUrls.push('/2018/11/19/nas服务器搭建/');
 
