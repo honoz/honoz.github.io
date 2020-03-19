@@ -28,7 +28,7 @@ var precacheUrls = [];
 
   precacheUrls.push('/2018/11/19/nas服务器搭建/');
 
-  precacheUrls.push('/2020/11/19/Arduino-for-esp8266安装方法/');
+  precacheUrls.push('/2020/03/19/Arduino-for-esp8266安装方法/');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":30};
