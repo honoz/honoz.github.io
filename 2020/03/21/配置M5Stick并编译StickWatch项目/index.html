@@ -18,22 +18,42 @@
   
   
   <title>配置M5Stick并编译StickWatch项目 | Honoz的博客</title>
-  <meta name="description" content="目录： 1.将usb安装到串行驱动程序中 2.安装ESP32开发板 3.安装M5Stack库 4.安装U8g2库 5.安装WiFi库 6.安装ArduinoJson (6.2.0-beta as local dependancy)库 将usb安装到串行驱动程序中1.单击右边的链接下载CP210X驱动程序。                      Windows">
+  <meta name="description" content="目录：1.将usb安装到串行驱动程序中 2.安装ESP32开发板 3.安装M5Stack库 4.安装U8g2库 5.安装WiFi库 6.安装ArduinoJson库(6.2.0-beta as local dependancy) 7.配置Arduino IDE 8.编译StickWatch项目 1.将usb安装到串行驱动程序中1.单击右边的链接下载CP210X驱动程序。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="配置M5Stick并编译StickWatch项目">
-<meta property="og:url" content="http://yoursite.com/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch/index.html">
+<meta property="og:url" content="http://yoursite.com/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch%E9%A1%B9%E7%9B%AE/index.html">
 <meta property="og:site_name" content="Honoz的博客">
-<meta property="og:description" content="目录： 1.将usb安装到串行驱动程序中 2.安装ESP32开发板 3.安装M5Stack库 4.安装U8g2库 5.安装WiFi库 6.安装ArduinoJson (6.2.0-beta as local dependancy)库 将usb安装到串行驱动程序中1.单击右边的链接下载CP210X驱动程序。                      Windows">
+<meta property="og:description" content="目录：1.将usb安装到串行驱动程序中 2.安装ESP32开发板 3.安装M5Stack库 4.安装U8g2库 5.安装WiFi库 6.安装ArduinoJson库(6.2.0-beta as local dependancy) 7.配置Arduino IDE 8.编译StickWatch项目 1.将usb安装到串行驱动程序中1.单击右边的链接下载CP210X驱动程序。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://honoz.github.io/images/photo/win.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/13.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/14.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/15.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/16.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/17.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/18.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/19.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/20.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/21.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/22.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/23.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/24.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/25.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/26.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/27.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/28.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/29.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/30.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/31.png">
+<meta property="og:image" content="https://honoz.github.io/images/photo/32.jpg">
 <meta property="article:published_time" content="2020-03-20T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-03-21T01:55:59.763Z">
+<meta property="article:modified_time" content="2020-03-21T03:09:02.791Z">
 <meta property="article:author" content="Honoz">
 <meta property="article:tag" content="M5Stick">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://honoz.github.io/images/photo/win.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://yoursite.com/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch/index.html">
+  <link rel="canonical" href="http://yoursite.com/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch%E9%A1%B9%E7%9B%AE/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Honoz的博客" type="application/atom+xml">
   
@@ -271,7 +291,7 @@
                 <a class="category-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a>
               </p>
               <p class="item-title">
-                <a href="/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch/" class="title">配置M5Stick并编译StickWatch项目</a>
+                <a href="/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch%E9%A1%B9%E7%9B%AE/" class="title">配置M5Stick并编译StickWatch项目</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-03-20T16:00:00.000Z" itemprop="datePublished">2020-03-21</time>
@@ -339,14 +359,14 @@
   <div class="slimContent">
     <nav id="toc" class="article-toc">
       <h3 class="toc-title">文章目录</h3>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#将usb安装到串行驱动程序中"><span class="toc-number">1.</span> <span class="toc-text">将usb安装到串行驱动程序中</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#目录："><span class="toc-number">1.</span> <span class="toc-text">目录：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-将usb安装到串行驱动程序中"><span class="toc-number">2.</span> <span class="toc-text">1.将usb安装到串行驱动程序中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-安装ESP32开发板"><span class="toc-number">3.</span> <span class="toc-text">2.安装ESP32开发板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-安装M5Stack库"><span class="toc-number">4.</span> <span class="toc-text">3.安装M5Stack库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-安装U8g2库"><span class="toc-number">5.</span> <span class="toc-text">4.安装U8g2库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-安装WiFi库"><span class="toc-number">6.</span> <span class="toc-text">5.安装WiFi库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-安装ArduinoJson库-6-2-0-beta-as-local-dependancy"><span class="toc-number">7.</span> <span class="toc-text">6.安装ArduinoJson库(6.2.0-beta as local dependancy)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-配置Arduino-IDE"><span class="toc-number">8.</span> <span class="toc-text">7.配置Arduino IDE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-编译StickWatch项目"><span class="toc-number">9.</span> <span class="toc-text">8.编译StickWatch项目</span></a></li></ol>
     </nav>
   </div>
 </aside>
 
 <main class="main" role="main">
   <div class="content">
-  <article id="post-配置M5Stick并编译StickWatch" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-配置M5Stick并编译StickWatch项目" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
@@ -361,7 +381,7 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch/" class="article-date">
+	<a href="/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch%E9%A1%B9%E7%9B%AE/" class="article-date">
 	  <time datetime="2020-03-20T16:00:00.000Z" itemprop="datePublished">2020-03-21</time>
 	</a>
 </span>
@@ -380,28 +400,92 @@
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch%E9%A1%B9%E7%9B%AE/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 76(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 659(字)</span>
 	
 	
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2(分)</span>
 	
 
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>目录：</p>
-<p>1.将usb安装到串行驱动程序中</p>
+        <h2 id="目录："><a href="#目录：" class="headerlink" title="目录："></a>目录：</h2><p>1.将usb安装到串行驱动程序中</p>
 <p>2.安装ESP32开发板</p>
 <p>3.安装M5Stack库</p>
 <p>4.安装U8g2库</p>
 <p>5.安装WiFi库</p>
-<p>6.安装ArduinoJson (6.2.0-beta as local dependancy)库</p>
-<h2 id="将usb安装到串行驱动程序中"><a href="#将usb安装到串行驱动程序中" class="headerlink" title="将usb安装到串行驱动程序中"></a>将usb安装到串行驱动程序中</h2><p>1.单击右边的链接下载CP210X驱动程序。                    <img src="https://honoz.github.io/images/photo/win.png">  <a href="https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/drivers/CP210x_VCP_Windows.zip" target="_blank" rel="noopener">Windows</a></p>
+<p>6.安装ArduinoJson库(6.2.0-beta as local dependancy)</p>
+<p>7.配置Arduino IDE</p>
+<p>8.编译StickWatch项目</p>
+<h2 id="1-将usb安装到串行驱动程序中"><a href="#1-将usb安装到串行驱动程序中" class="headerlink" title="1.将usb安装到串行驱动程序中"></a>1.将usb安装到串行驱动程序中</h2><p>1.单击右边的链接下载CP210X驱动程序。                    <img src="https://honoz.github.io/images/photo/win.png"><a href="https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/drivers/CP210x_VCP_Windows.zip" target="_blank" rel="noopener">Windows</a></p>
+<p>2.根据Windows操作系统类型，选择相应的驱动程序安装包</p>
+<p>32位CP210xVCPInstaller_x86_vx.x.x.x.exe</p>
+<p>64位CP210xVCPInstaller_x64_vx.x.x.x.exe</p>
+<img src="https://honoz.github.io/images/photo/13.png">
 
+<p>3.双击要安装的可执行文件</p>
+<p><img src="https://honoz.github.io/images/photo/14.png"> <img src="https://honoz.github.io/images/photo/15.png"></p>
+<p>4.查看端口号COMx</p>
+<p>查看已标识的com端口列表Windows设备管理器：</p>
+<p>通过USB-C型电缆将核心连接到计算机上，打开Windows设备管理器，单击端口(COM &amp; LPT)如果你看到这个SiLicon Labs CP210x USB to UART Bridge(COMx)，这意味着驱动程序安装成功，并且允许您的PC与M5通信。</p>
+<img src="https://honoz.github.io/images/photo/16.png">
+
+<h2 id="2-安装ESP32开发板"><a href="#2-安装ESP32开发板" class="headerlink" title="2.安装ESP32开发板"></a>2.安装ESP32开发板</h2><p>1.打开Arduino IDE，导航到文件-&gt;首选项-&gt;设置</p>
+<img src="https://honoz.github.io/images/photo/17.png">
+
+<img src="https://honoz.github.io/images/photo/18.png">
+
+<p>2.将下列ESP32开发板网址复制至附加开发板管理器网址:点击确定</p>
+<p>ESP32开发板管理器网址：<a href="https://dl.espressif.com/dl/package_esp32_index.json" target="_blank" rel="noopener">https://dl.espressif.com/dl/package_esp32_index.json</a></p>
+<img src="https://honoz.github.io/images/photo/19.png">
+
+<p>3.导航到工具-&gt;开发板:-&gt;开发板管理器…</p>
+<img src="https://honoz.github.io/images/photo/20.png">
+
+<p>4.在开发板管理器窗口搜索ESP32，找到它并单击安装</p>
+<img src="https://honoz.github.io/images/photo/21.png">
+
+<h2 id="3-安装M5Stack库"><a href="#3-安装M5Stack库" class="headerlink" title="3.安装M5Stack库"></a>3.安装M5Stack库</h2><p>1.打开Arduino IDE，然后选择项目-&gt;加载库-&gt;管理库…</p>
+<img src="https://honoz.github.io/images/photo/22.png">
+
+<p>2.搜索M5Stack，找到它，然后点击安装</p>
+<img src="https://honoz.github.io/images/photo/23.png">
+
+<h2 id="4-安装U8g2库"><a href="#4-安装U8g2库" class="headerlink" title="4.安装U8g2库"></a>4.安装U8g2库</h2><p>1.打开Arduino IDE，并导航到项目-&gt;加载库-&gt;管理库…，搜索U8g2安装这个库</p>
+<img src="https://honoz.github.io/images/photo/24.png">
+
+<h2 id="5-安装WiFi库"><a href="#5-安装WiFi库" class="headerlink" title="5.安装WiFi库"></a>5.安装WiFi库</h2><p>1.打开Arduino IDE，并导航到项目-&gt;加载库-&gt;管理库…，搜索WiFi安装这个库</p>
+<img src="https://honoz.github.io/images/photo/25.png">
+
+<h2 id="6-安装ArduinoJson库-6-2-0-beta-as-local-dependancy"><a href="#6-安装ArduinoJson库-6-2-0-beta-as-local-dependancy" class="headerlink" title="6.安装ArduinoJson库(6.2.0-beta as local dependancy)"></a>6.安装ArduinoJson库(6.2.0-beta as local dependancy)</h2><p>1.打开Arduino IDE，并导航到项目-&gt;加载库-&gt;管理库…，搜索ArduinoJson安装这个库</p>
+<img src="https://honoz.github.io/images/photo/26.png">
+
+<h2 id="7-配置Arduino-IDE"><a href="#7-配置Arduino-IDE" class="headerlink" title="7.配置Arduino IDE"></a>7.配置Arduino IDE</h2><p>1.选择正确的开发板名和串行设备名称</p>
+<p>选择工具-&gt;开发板-&gt;M5Stack-Core-ESP32</p>
+<p>选择正确的端口号工具-&gt;端口：-&gt;COMx</p>
+<p>为了避免项目过大，请将Partition Scheme设置成Large App No OTA，选择工具-&gt;Partition Scheme-&gt;Large App No OTA</p>
+<img src="https://honoz.github.io/images/photo/27.png">
+
+<h2 id="8-编译StickWatch项目"><a href="#8-编译StickWatch项目" class="headerlink" title="8.编译StickWatch项目"></a>8.编译StickWatch项目</h2><p>1.下载由eggfly编写的M5Sick智能手表项目——<a href="https://github.com/eggfly/StickWatch" target="_blank" rel="noopener">StickWatch</a></p>
+<img src="https://honoz.github.io/images/photo/28.png">
+
+<p>2.解压项目后用Arduino IDE打开，找到StickWatch文件夹选择StickWatch.ino文件打开</p>
+<img src="https://honoz.github.io/images/photo/29.png">
+
+<p>3.配置Wifi</p>
+<p>为了能正常显示时间，需要配置 WIFI</p>
+<p>打开 config.h 文件，修改第5、6行，修改成你的wifi账号和密码</p>
+<img src="https://honoz.github.io/images/photo/30.png">
+
+<p>4.编译StickWatch项目并上传到M5Stick</p>
+<p>先保存一下，在选择上传就能将项目编译到M5Stick</p>
+<img src="https://honoz.github.io/images/photo/31.png">
+
+<img src="https://honoz.github.io/images/photo/32.jpg">
       
     </div>
     <div class="article-footer">
@@ -570,7 +654,7 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1584755769753')
+  navigator.serviceWorker.register('/sw.js?t=1584760156961')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }

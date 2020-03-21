@@ -18,15 +18,15 @@
   
   
   <title>nas服务器搭建（迅雷远程下载） | Honoz的博客</title>
-  <meta name="description" content="主要功能： 1、迅雷远程下载，可以通过手机端电脑端远程下载文件，实现免费的离线下载。 2、文件共享，通过SAMBA 实现电脑，手机，服务器上文件共享功能。 迅雷远程服务搭建挂载磁盘安装所需软件包 1$ sudo apt-get install fuse-utils ntfs-3g 这里我们要设置成开机自动挂载 完成此设置后，可以在插入USB设备时，自动将设备挂载到一个本地目录下。 配置自动挂载1$">
+  <meta name="description" content="迅雷远程服务搭建主要功能： 1、迅雷远程下载，可以通过手机端电脑端远程下载文件，实现免费的离线下载。 2、文件共享，通过SAMBA 实现电脑，手机，服务器上文件共享功能。 挂载磁盘安装所需软件包 1$ sudo apt-get install fuse-utils ntfs-3g 这里我们要设置成开机自动挂载 完成此设置后，可以在插入USB设备时，自动将设备挂载到一个本地目录下。 配置自动挂载1$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="nas服务器搭建（迅雷远程下载）">
 <meta property="og:url" content="http://yoursite.com/2018/11/19/nas%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Honoz的博客">
-<meta property="og:description" content="主要功能： 1、迅雷远程下载，可以通过手机端电脑端远程下载文件，实现免费的离线下载。 2、文件共享，通过SAMBA 实现电脑，手机，服务器上文件共享功能。 迅雷远程服务搭建挂载磁盘安装所需软件包 1$ sudo apt-get install fuse-utils ntfs-3g 这里我们要设置成开机自动挂载 完成此设置后，可以在插入USB设备时，自动将设备挂载到一个本地目录下。 配置自动挂载1$">
+<meta property="og:description" content="迅雷远程服务搭建主要功能： 1、迅雷远程下载，可以通过手机端电脑端远程下载文件，实现免费的离线下载。 2、文件共享，通过SAMBA 实现电脑，手机，服务器上文件共享功能。 挂载磁盘安装所需软件包 1$ sudo apt-get install fuse-utils ntfs-3g 这里我们要设置成开机自动挂载 完成此设置后，可以在插入USB设备时，自动将设备挂载到一个本地目录下。 配置自动挂载1$">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2018-11-18T16:00:00.000Z">
-<meta property="article:modified_time" content="2018-11-19T09:29:23.309Z">
+<meta property="article:modified_time" content="2020-03-21T01:57:39.850Z">
 <meta property="article:author" content="Honoz">
 <meta property="article:tag" content="程序员">
 <meta name="twitter:card" content="summary">
@@ -269,7 +269,7 @@
                 <a class="category-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a>
               </p>
               <p class="item-title">
-                <a href="/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch/" class="title">配置M5Stick并编译StickWatch项目</a>
+                <a href="/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch%E9%A1%B9%E7%9B%AE/" class="title">配置M5Stick并编译StickWatch项目</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-03-20T16:00:00.000Z" itemprop="datePublished">2020-03-21</time>
@@ -391,10 +391,10 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>主要功能：</p>
+        <h2 id="迅雷远程服务搭建"><a href="#迅雷远程服务搭建" class="headerlink" title="迅雷远程服务搭建"></a>迅雷远程服务搭建</h2><p>主要功能：</p>
 <p>1、迅雷远程下载，可以通过手机端电脑端远程下载文件，实现免费的离线下载。</p>
 <p>2、文件共享，通过SAMBA 实现电脑，手机，服务器上文件共享功能。</p>
-<h2 id="迅雷远程服务搭建"><a href="#迅雷远程服务搭建" class="headerlink" title="迅雷远程服务搭建"></a>迅雷远程服务搭建</h2><h3 id="挂载磁盘"><a href="#挂载磁盘" class="headerlink" title="挂载磁盘"></a>挂载磁盘</h3><p>安装所需软件包</p>
+<h3 id="挂载磁盘"><a href="#挂载磁盘" class="headerlink" title="挂载磁盘"></a>挂载磁盘</h3><p>安装所需软件包</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install fuse-utils ntfs-3g</span><br></pre></td></tr></table></figure>
 <p>这里我们要设置成开机自动挂载</p>
 <p>完成此设置后，可以在插入USB设备时，自动将设备挂载到一个本地目录下。</p>
@@ -593,7 +593,7 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1584755769753')
+  navigator.serviceWorker.register('/sw.js?t=1584760156961')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
