@@ -17,16 +17,23 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>归档: 2018 | Honoz的博客</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Honoz的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <title>配置M5Stick并编译StickWatch项目 | Honoz的博客</title>
+  <meta name="description" content="目录： 1.将usb安装到串行驱动程序中 2.安装ESP32开发板 3.安装M5Stack库 4.安装U8g2库 5.安装WiFi库 6.安装ArduinoJson (6.2.0-beta as local dependancy)库 将usb安装到串行驱动程序中1.单击右边的链接下载CP210X驱动程序。                      Windows">
+<meta property="og:type" content="article">
+<meta property="og:title" content="配置M5Stick并编译StickWatch项目">
+<meta property="og:url" content="http://yoursite.com/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch/index.html">
 <meta property="og:site_name" content="Honoz的博客">
+<meta property="og:description" content="目录： 1.将usb安装到串行驱动程序中 2.安装ESP32开发板 3.安装M5Stack库 4.安装U8g2库 5.安装WiFi库 6.安装ArduinoJson (6.2.0-beta as local dependancy)库 将usb安装到串行驱动程序中1.单击右边的链接下载CP210X驱动程序。                      Windows">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://honoz.github.io/images/photo/win.png">
+<meta property="article:published_time" content="2020-03-20T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-03-21T01:55:59.763Z">
 <meta property="article:author" content="Honoz">
+<meta property="article:tag" content="M5Stick">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://honoz.github.io/images/photo/win.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://yoursite.com/archives/2018/index.html">
+  <link rel="canonical" href="http://yoursite.com/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Honoz的博客" type="application/atom+xml">
   
@@ -328,59 +335,144 @@
 
   
   
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title">文章目录</h3>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#将usb安装到串行驱动程序中"><span class="toc-number">1.</span> <span class="toc-text">将usb安装到串行驱动程序中</span></a></li></ol>
+    </nav>
+  </div>
+</aside>
+
 <main class="main" role="main">
-  	<article class="content article article-archives article-type-list" itemscope="">
-	    <header class="article-header">
-	      <h1 itemprop="title">归档: 2018</h1>
-	      <p class="text-muted">共 2 篇文章</p>
-	    </header>
-	    <div class="article-body">
-	      
-  
-  
+  <div class="content">
+  <article id="post-配置M5Stick并编译StickWatch" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
-    
+    <div class="article-header">
       
+        
+  
+    <h1 class="article-title" itemprop="name">
+      配置M5Stick并编译StickWatch项目
+    </h1>
+  
+
       
-      <section class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse2018" aria-expanded="true">
-              <i class="icon icon-calendar-plus text-active"></i><i class="icon icon-calendar-minus text"></i>
-              2018
-            </a>
-            <!-- <a href="/archives/2018" class="archive-year">2018</a> -->
-          </h3>
-        </div>
-        <div id="collapse2018" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2018">
-        <div class="panel-body">
-          <div class="collection">
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch/" class="article-date">
+	  <time datetime="2020-03-20T16:00:00.000Z" itemprop="datePublished">2020-03-21</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/M5Stick/" rel="tag">M5Stick</a>
+  </span>
+
+
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/03/21/%E9%85%8D%E7%BD%AEM5Stick%E5%B9%B6%E7%BC%96%E8%AF%91StickWatch/#comments" class="article-comment-link">评论</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 76(字)</span>
+	
+	
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
+	
+
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <p>目录：</p>
+<p>1.将usb安装到串行驱动程序中</p>
+<p>2.安装ESP32开发板</p>
+<p>3.安装M5Stack库</p>
+<p>4.安装U8g2库</p>
+<p>5.安装WiFi库</p>
+<p>6.安装ArduinoJson (6.2.0-beta as local dependancy)库</p>
+<h2 id="将usb安装到串行驱动程序中"><a href="#将usb安装到串行驱动程序中" class="headerlink" title="将usb安装到串行驱动程序中"></a>将usb安装到串行驱动程序中</h2><p>1.单击右边的链接下载CP210X驱动程序。                    <img src="https://honoz.github.io/images/photo/win.png">  <a href="https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/drivers/CP210x_VCP_Windows.zip" target="_blank" rel="noopener">Windows</a></p>
+
+      
+    </div>
+    <div class="article-footer">
+      </blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/honoz" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/honoz" target="_blank"><span class="text-dark">Honoz</span><small class="ml-1x">致力于Android开发与UI设计</small></a></h3>
+        <div>记录学习技巧和遇到的问题。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
     
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
     
-<a href="/2018/11/19/nas%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2018-11-18T16:00:00.000Z" itemprop="datePublished">2018-11-19</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> nas服务器搭建（迅雷远程下载）
-</a>
+  </section>
 
 
   
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
     
     
+    <li class="next">
+      <a href="/2020/03/19/Arduino-for-esp8266%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/" title="Arduino for esp8266安装方法"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
     
-<a href="/2018/10/12/hello-world/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2018-10-11T16:00:00.000Z" itemprop="datePublished">2018-10-12</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> Hello World
-</a>
-
-
+    
+    <li class="toggle-toc">
+      <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="文章目录" role="button">
+        <span>[&nbsp;</span><span>文章目录</span>
+        <i class="text-collapsed icon icon-anchor"></i>
+        <i class="text-in icon icon-close"></i>
+        <span>]</span>
+      </a>
+    </li>
+    
+  </ul>
   
   
-    </div></div></div></section>
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="qq,wechat,weibo,facebook,twitter" data-mobile-sites="qq,wechat,weibo,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
   
 
-	    </div>
-  	</article>
-  	 	
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -439,6 +531,37 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'PLqcI6vCt2SU2diRWfaAYr3a-gzGzoHsz',
+    appKey: 'oYjN5soWw3eHLm6pH2fDpgAl',
+    placeholder: '写评论！',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
 
 
 

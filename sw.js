@@ -30,6 +30,8 @@ var precacheUrls = [];
 
   precacheUrls.push('/2018/11/19/nas服务器搭建/');
 
+  precacheUrls.push('/2020/03/21/配置M5Stick并编译StickWatch/');
+
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":30};
 
