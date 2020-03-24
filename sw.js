@@ -24,11 +24,11 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
-  precacheUrls.push('/2020/03/19/Arduino-for-esp8266安装方法/');
-
   precacheUrls.push('/2018/11/19/nas服务器搭建/');
 
   precacheUrls.push('/2018/10/12/hello-world/');
+
+  precacheUrls.push('/2020/03/19/Arduino-for-esp8266安装方法/');
 
   precacheUrls.push('/2020/03/21/配置M5Stick并编译StickWatch项目/');
 
